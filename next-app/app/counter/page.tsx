@@ -1,0 +1,15 @@
+"use client"
+import { useState } from "react"
+
+export default function page (){
+    const [count,setCount]=useState<number>(0)
+
+  return (
+    <div>
+        <h1>Count : {count}</h1>
+        <button onClick={()=>setCount(count+1)}>+</button>
+        <button onClick={()=>setCount(count-1)}>-</button>
+        <button onClick={()=>setCount(0)}>reset</button>
+    </div>
+  )
+}
