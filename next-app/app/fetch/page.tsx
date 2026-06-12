@@ -9,7 +9,7 @@ async function getFetch():Promise<Product[]>{
 }
 
 export default async function Fetch(){
-  const products= await getFetch()
+  const products = await getFetch()
   return(
     <>
     <h1>Products</h1>
